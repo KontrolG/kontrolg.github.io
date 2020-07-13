@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header id="home" class="hide">
+  <header id="home">
     <h1>German Solano</h1>
     <p class="medium-copy">Desarrollador web</p>
     <p class="small-copy">Frontend — ReactJS</p>
@@ -43,24 +43,84 @@
   <main>
     <section id="projects">
       <h2>Proyectos</h2>
-      <figure class="project-showcase">
-        <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
-        <figcaption>
-          <h3>UNO</h3>
+      <div class="project-showcase">
+        <figure>
+          <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
+          <figcaption>
+            <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
+              <i class="icon-eye"></i>
+              Demostración
+            </a>
+            <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
+              <i class="icon-embed2"></i>
+              Código fuente
+            </a>
+          </figcaption>
+        </figure>
+        <div class="project-info">
+          <h3>Juego de cartas UNO</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente consequatur obcaecati repellat
-            consectetur similique eius officia reiciendis. Aperiam, nulla?
+            Basado en el famoso juego de <em>Matel</em>. ¡El primero en quedarse sin cartas gana!. Juega contra la
+            <em>CPU</em>
+            utilizando
+            <strong>cartas de acción</strong> como reversa, pierde turno, cambia color, entre otras. Luego de cada
+            partida, el ganador
+            suma puntos, <strong>¡llega a 500 para ganar el juego!</strong>.
           </p>
-          <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
-            <i class="icon-eye"></i>
-            Demostración
-          </a>
-          <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
-            <i class="icon-embed2"></i>
-            Código fuente
-          </a>
-        </figcaption>
-      </figure>
+          <h4>Caracteristicas</h4>
+          <ul class="features">
+            <li>Realizado con HTML, CSS y únicamente Javascript</li>
+            <li>Sin ninguna librería</li>
+            <li>Implementa todas las reglas del juego</li>
+            <li>Animaciones</li>
+            <li>Reacciona a las interacciones del usuario</li>
+            <li>Posee sonidos</li>
+            <li>Las cartas son de creación propia</li>
+            <li>
+              Utiliza conceptos de forma creativa para solucionar problemas en la jugabilidad
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-showcase hide">
+        <figure>
+          <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
+          <figcaption>
+            <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
+              <i class="icon-eye"></i>
+              Demostración
+            </a>
+            <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
+              <i class="icon-embed2"></i>
+              Código fuente
+            </a>
+          </figcaption>
+        </figure>
+        <div class="project-info">
+          <h3>Juego de cartas UNO</h3>
+          <p>
+            Basado en el famoso juego de <em>Matel</em>. ¡El primero en quedarse sin cartas gana!. Juega contra la
+            <em>CPU</em>
+            utilizando
+            <strong>cartas de acción</strong> como reversa, pierde turno, cambia color, entre otras. Luego de cada
+            partida, el ganador
+            suma puntos, <strong>¡llega a 500 para ganar el juego!</strong>.
+          </p>
+          <h4>Caracteristicas</h4>
+          <ul class="features">
+            <li>Realizado con HTML, CSS y únicamente Javascript</li>
+            <li>Sin ninguna librería</li>
+            <li>Implementa todas las reglas del juego</li>
+            <li>Animaciones</li>
+            <li>Reacciona a las interacciones del usuario</li>
+            <li>Posee sonidos</li>
+            <li>Las cartas son de creación propia</li>
+            <li>
+              Utiliza conceptos de forma creativa para solucionar problemas en la jugabilidad
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section id="font-test" class="">
       <h2>Título de sección</h2>
@@ -78,7 +138,10 @@
     </section>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <blockquote>El buen marketing comienza con un buen producto</blockquote>
+    <cite>Steve Jobs</cite>
+  </footer>
 </body>
 
 </html>

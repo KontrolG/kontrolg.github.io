@@ -40,6 +40,11 @@ a {
 
 p {
   letter-spacing: 0.05em;
+  margin-bottom: 1em;
+}
+
+ul {
+  text-indent: 1.15em;
 }
 
 em {
@@ -70,7 +75,7 @@ h2 {
   font-size: 2.472rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.2rem;
 }
 
@@ -83,6 +88,15 @@ h3 {
 
 h4 {
   font-size: 1.45rem;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 3rem;
+}
+
+cite::before {
+  content: "— ";
 }
 
 a:not([href]) {
@@ -115,11 +129,12 @@ a:not([href]) {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 header,
-section {
+section,
+footer {
   padding: 4rem 6rem;
 }
 
@@ -127,6 +142,7 @@ section:nth-child(odd) {
   background: rgb(241, 237, 234);
 }
 
+/* HEADER (HERO) SECTION */
 header {
   height: 100vh;
   padding-bottom: 2rem;
@@ -198,35 +214,35 @@ header .go-down-button i {
   margin-bottom: 4rem;
 }
 
-.project-showcase img {
-  border-radius: 4px;
-  width: 33%;
+.project-showcase figure {
+  width: calc(38.2% - 1.25rem);
+  margin-right: 2.5rem;
+  text-align: center;
   flex-basis: auto;
 }
 
-.project-showcase figcaption {
-  margin-top: -1rem;
-  flex: 2;
-}
-
-.project-showcase figcaption p {
-  text-align: justify;
-  margin-bottom: 1.5rem;
+.project-showcase figure img {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .project-showcase figcaption a:first-of-type {
   margin-right: 0.75rem;
 }
 
-.project-showcase:nth-child(even) img {
-  margin-right: 2.5rem;
+.project-info {
+  flex: 1;
 }
 
-.project-showcase:nth-child(odd) figcaption {
-  order: -1;
-  margin-right: 2.5rem;
+.project-info p {
+  text-align: justify;
 }
-
+/* FOOTER SECTION */
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
 /* Knowladge section */
 .knowladge {
   justify-content: space-around;
