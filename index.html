@@ -6,142 +6,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="author" content="German Solano">
-  <meta name="description" content="">
+  <meta name="description" content="Soy un programador autodidacta enfocado en 
+  el desarrollo de apps con Javascript, HTML y CSS. Construyo maquetaciones 
+  responsivas a partir de ideas o diseños y doy vida a interfaces de usuario 
+  creando interacciones dinámicas y amigables">
   <link rel="stylesheet" href="resources/css/style.css" />
   <link rel="stylesheet" href="resources/css/icons.css" />
   <title>German Solano — Desarrollador web</title>
 </head>
 
 <body>
+  <nav class="">
+    <ul class="main-navigation">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contactame</a></li>
+    </ul>
+  </nav>
   <header id="home">
     <h1>German Solano</h1>
     <p class="medium-copy">Desarrollador web</p>
     <p class="small-copy">Frontend — ReactJS</p>
     <div class="wrapper">
-      <a class="button button-primary" href="#projects">
+      <a class="button button-primary"
+        href="https://drive.google.com/file/d/1PfXPu3W96bN4kBc8MD4Z40rk7TEZmJ5r/view?usp=sharing" target="_blank">
+        <i class="icon-file-text"></i>
+        Hoja de vida
+      </a>
+      <a class="button" href="#projects">
         <i class="icon-folder-open"></i>
         Proyectos
-      </a>
-      <a class="button" href="www.github.com/KontrolG">
-        <i class="icon-github"></i>
-        Hoja de vida
       </a>
     </div>
     <a class="go-down-button" href="#projects">
       <i class="icon-circle-down"></i>
     </a>
   </header>
-  <nav class="hide">
-    <ul class="main-navigation">
-      <li><a href="#home">Inicio</a></li>
-      <li><a>Sobre Mi</a></li>
-      <li><a>Habilidades</a></li>
-      <li><a>Proyectos</a></li>
-      <li><a>Contactame</a></li>
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="project-showcase">
+      <figure>
+        <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
+        <figcaption>
+          <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
+            <i class="icon-eye"></i>
+            Demostración
+          </a>
+          <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
+            <i class="icon-embed"></i>
+            Código fuente
+          </a>
+        </figcaption>
+      </figure>
+      <div class="project-info">
+        <h3>Juego de cartas UNO</h3>
+        <p>
+          Basado en el famoso juego de <em>Matel</em>. ¡El primero en quedarse sin cartas gana!. Juega contra la
+          <em>CPU</em>
+          utilizando
+          <strong>cartas de acción</strong> como reversa, pierde turno, cambia color, entre otras. Luego de cada
+          partida, el ganador
+          suma puntos, <strong>¡llega a 500 para ganar el juego!</strong>.
+        </p>
+        <h4>Caracteristicas</h4>
+        <ul class="features">
+          <li>Realizado con <strong>HTML, CSS y Javascript</strong></li>
+          <li>Sin ninguna librería</li>
+          <li>Implementa todas las <strong>reglas del juego</strong></li>
+          <li>Reacciona a las interacciones del usuario</li>
+          <li>Posee <strong>animaciones y sonidos</strong></li>
+          <li>Las cartas son de creación propia</li>
+          <li>
+            Utiliza conceptos de forma creativa para mejorar la <strong>jugabilidad</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-showcase">
+      <figure>
+        <img src="resources/img/breakout-preview.jpg" alt="Vista previa de Rompeladrillos">
+        <figcaption>
+          <a class="button button-primary" href="/breakout" title="Ver demostración" target="_blank">
+            <i class="icon-eye"></i>
+            Demostración
+          </a>
+          <a class="button" href="https://github.com/KontrolG/breakout" title="Ver código fuente" target="_blank">
+            <i class="icon-embed"></i>
+            Código fuente
+          </a>
+        </figcaption>
+      </figure>
+      <div class="project-info">
+        <h3>Rompeladrillos</h3>
+        <p>
+          Revive la época del <em>arcade</em> con este maravilloso juego. Mueve la paleta para evitar que la bola
+          caiga y rompe
+          todos los ladrillos sin perder todas tus vidas. Utiliza el ratón o las flechas del teclado para mover la
+          paleta y <kbd>Esc</kbd> para pausar el juego.
+        </p>
+        <h4>Caracteristicas</h4>
+        <ul class="features">
+          <li>Gráficos 2D gracias al <strong>Canvas API</strong></li>
+          <li>Colores agradables</li>
+          <li><strong>Mensajes</strong> pertinentes</li>
+          <li>Se controla con el ratón y el teclado</li>
+          <li><strong>Sistema de vidas</strong></li>
+          <li>Conteo total de ladrillos restantes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-showcase">
+      <figure>
+        <img src="resources/img/todo-list-preview.jpg" alt="Vista previa de Lista de Por Hacer">
+        <figcaption>
+          <a class="button button-primary" href="/todo-list" title="Ver demostración" target="_blank">
+            <i class="icon-eye"></i>
+            Demostración
+          </a>
+          <a class="button" href="https://github.com/KontrolG/todo-list" title="Ver código fuente" target="_blank">
+            <i class="icon-embed"></i>
+            Código fuente
+          </a>
+        </figcaption>
+      </figure>
+      <div class="project-info">
+        <h3>Lista de Por Hacer</h3>
+        <p>
+          Lleva un control de las cosas que tienes pendientes por hacer registrándolas y marcando las que termines.
+          Lista tus tareas y <strong>¡no olvides completarlas todas!</strong>.
+          Observa el tiempo transcurrido desde que registraste una tarea, <strong>¡no dejes que pase mucho
+            tiempo!</strong>.
+        </p>
+        <h4>Caracteristicas</h4>
+        <ul class="features">
+          <li>Diseño <strong>Material</strong></li>
+          <li>Registra, marca como terminada y elimina los por hacer</li>
+          <li>Los por hacer guardados <strong>persisten</strong> luego de cerrar la pestaña</li>
+          <li>Puedes marcar, desmarcar y eliminar todos a la vez</li>
+          <li>Muestra el tiempo de <strong>creación y finalización</strong> del por hacer</li>
+          <li>Posee animaciones</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-showcase">
+      <figure>
+        <img src="resources/img/mini-blackjack-preview.jpg" alt="Vista previa de Mini Blackjack">
+        <figcaption>
+          <a class="button button-primary" href="/mini-blackjack" title="Ver demostración" target="_blank">
+            <i class="icon-eye"></i>
+            Demostración
+          </a>
+          <a class="button" href="https://github.com/KontrolG/mini-blackjack" title="Ver código fuente" target="_blank">
+            <i class="icon-embed"></i>
+            Código fuente
+          </a>
+        </figcaption>
+      </figure>
+      <div class="project-info">
+        <h3>Mini Blackjack</h3>
+        <p>
+          Súper simple pero <strong>adictivo</strong> juego de cartas. Si te gusta apostar pero no te gusta perder
+          dinero, este <em>Blackjack</em> es <strong>perfecto para
+            ti</strong>. Pide tus cartas e intenta no pasarte de <strong>21 puntos</strong>, luego espera a que el
+          <em>Caddy</em> juegue y <strong>¡que la suerte te acompañe!</strong>. Intenta superar la puntuación de tu
+          rival.
+        </p>
+        <h4>Caracteristicas</h4>
+        <ul class="features">
+          <li>Cartas de <strong>creación propia</strong></li>
+          <li>Conteo de ganados, empatados y perdidos</li>
+          <li>Sencillo pero <strong>adictivo</strong></li>
+          <li>Posee <em>Caddy</em> que juega contra ti</li>
+          <li><strong>Mensajes</strong> pertinentes</li>
+          <li>Pide cartas, mantente y vuelve a jugar una y otra vez</li>
+          <li>Posee <strong>sonidos</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <h2>Contactame</h2>
+    <ul class="contact-info">
+      <li>
+        <i class="icon-whatsapp"></i>
+        <a href="https://wa.me/584125220585" title="Enviar mensaje" target="_blank">
+          +58 412-5220585
+        </a>
+      </li>
+      <li>
+        <i class="icon-envelop"></i>
+        <a href="mailto:germansdev@gmail.com" title="Enviar correo" target="_blank">
+          germansdev@gmail.com
+        </a>
+      </li>
+      <li>
+        <i class="icon-github"></i>
+        <a href="https://github.com/KontrolG" title="Visitar perfil de Github" target="_blank">
+          www.github.com/KontrolG
+        </a>
+      </li>
     </ul>
-  </nav>
-  <main>
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <div class="project-showcase">
-        <figure>
-          <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
-          <figcaption>
-            <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
-              <i class="icon-eye"></i>
-              Demostración
-            </a>
-            <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
-              <i class="icon-embed2"></i>
-              Código fuente
-            </a>
-          </figcaption>
-        </figure>
-        <div class="project-info">
-          <h3>Juego de cartas UNO</h3>
-          <p>
-            Basado en el famoso juego de <em>Matel</em>. ¡El primero en quedarse sin cartas gana!. Juega contra la
-            <em>CPU</em>
-            utilizando
-            <strong>cartas de acción</strong> como reversa, pierde turno, cambia color, entre otras. Luego de cada
-            partida, el ganador
-            suma puntos, <strong>¡llega a 500 para ganar el juego!</strong>.
-          </p>
-          <h4>Caracteristicas</h4>
-          <ul class="features">
-            <li>Realizado con HTML, CSS y únicamente Javascript</li>
-            <li>Sin ninguna librería</li>
-            <li>Implementa todas las reglas del juego</li>
-            <li>Animaciones</li>
-            <li>Reacciona a las interacciones del usuario</li>
-            <li>Posee sonidos</li>
-            <li>Las cartas son de creación propia</li>
-            <li>
-              Utiliza conceptos de forma creativa para solucionar problemas en la jugabilidad
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="project-showcase hide">
-        <figure>
-          <img src="resources/img/card-game-preview.jpg" alt="Vista previa de UNO">
-          <figcaption>
-            <a class="button button-primary" href="/card-game" title="Ver demostración" target="_blank">
-              <i class="icon-eye"></i>
-              Demostración
-            </a>
-            <a class="button" href="https://github.com/KontrolG/card-game" title="Ver código fuente" target="_blank">
-              <i class="icon-embed2"></i>
-              Código fuente
-            </a>
-          </figcaption>
-        </figure>
-        <div class="project-info">
-          <h3>Juego de cartas UNO</h3>
-          <p>
-            Basado en el famoso juego de <em>Matel</em>. ¡El primero en quedarse sin cartas gana!. Juega contra la
-            <em>CPU</em>
-            utilizando
-            <strong>cartas de acción</strong> como reversa, pierde turno, cambia color, entre otras. Luego de cada
-            partida, el ganador
-            suma puntos, <strong>¡llega a 500 para ganar el juego!</strong>.
-          </p>
-          <h4>Caracteristicas</h4>
-          <ul class="features">
-            <li>Realizado con HTML, CSS y únicamente Javascript</li>
-            <li>Sin ninguna librería</li>
-            <li>Implementa todas las reglas del juego</li>
-            <li>Animaciones</li>
-            <li>Reacciona a las interacciones del usuario</li>
-            <li>Posee sonidos</li>
-            <li>Las cartas son de creación propia</li>
-            <li>
-              Utiliza conceptos de forma creativa para solucionar problemas en la jugabilidad
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="font-test" class="">
-      <h2>Título de sección</h2>
-      <h3>Subtítulo</h3>
-      <h4>Sub-subtítulo</h4>
-      <p>
-        Lorem <em>ipsum dolor</em> sit amet <a href="www.nowhere.com">consectetur</a> adipisicing elit. Cum error
-        <strong>fugiat quibusdam</strong>
-        minim| ipsa autem
-        eaque,
-        iste <em>ducimus dicta</em> aspernatur, temporibus aliquid. Aperiam exercitationem laborum nulla
-        <strong>aspernatur pariatur</strong>!
-        Eaque, <a href="www.nowhere.com">obcaecati</a>.
-      </p>
-    </section>
-    </section>
-  </main>
-  <footer>
     <blockquote>El buen marketing comienza con un buen producto</blockquote>
     <cite>Steve Jobs</cite>
   </footer>
+
+  <script src="resources/js/main.js"></script>
 </body>
 
 </html>
