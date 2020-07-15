@@ -10,13 +10,23 @@
   el desarrollo de apps con Javascript, HTML y CSS. Construyo maquetaciones 
   responsivas a partir de ideas o diseños y doy vida a interfaces de usuario 
   creando interacciones dinámicas y amigables">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172750989-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-172750989-1');
+  </script>
   <link rel="stylesheet" href="resources/css/style.css" />
   <link rel="stylesheet" href="resources/css/icons.css" />
   <title>German Solano — Desarrollador web</title>
 </head>
 
 <body>
-  <nav class="">
+  <nav>
+    <button type="button" class="button toggle-navigation"><i>X</i></button>
     <ul class="main-navigation">
       <li><a href="#home">Inicio</a></li>
       <li><a href="#projects">Proyectos</a></li>
@@ -28,8 +38,7 @@
     <p class="medium-copy">Desarrollador web</p>
     <p class="small-copy">Frontend — ReactJS</p>
     <div class="wrapper">
-      <a class="button button-primary"
-        href="https://drive.google.com/file/d/1PfXPu3W96bN4kBc8MD4Z40rk7TEZmJ5r/view?usp=sharing" target="_blank">
+      <a class="button button-primary" href="/curriculum.pdf" target="_blank">
         <i class="icon-file-text"></i>
         Hoja de vida
       </a>
