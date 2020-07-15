@@ -26,8 +26,7 @@ html {
 
 body {
   color: var(--dark);
-  font: 450 20px / 1.5 "Century Gothic", "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  font: 500 20px / 1.5 'Montserrat', sans-serif;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   background-color: var(--light);
@@ -48,7 +47,7 @@ em {
 }
 
 h1 {
-  font: 200 4rem / 1.15 Century, serif;
+  font: 400 4rem / 1.15 'Roboto Slab', serif;
   display: inline-block;
   width: max-content;
   padding: 0 0.75rem;
@@ -74,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-family: Century, serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.527rem;
   line-height: 2;
   color: var(--complementary);
@@ -309,6 +308,10 @@ footer blockquote,
 footer cite {
   display: block;
   text-align: center;
+}
+
+footer blockquote {
+  font-style: italic;
 }
 
 /* Knowladge section */
