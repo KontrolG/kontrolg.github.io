@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'portfolio';
-  src:  url('fonts/portfolio.eot?ydqqj6');
-  src:  url('fonts/portfolio.eot?ydqqj6#iefix') format('embedded-opentype'),
-    url('fonts/portfolio.ttf?ydqqj6') format('truetype'),
-    url('fonts/portfolio.woff?ydqqj6') format('woff'),
-    url('fonts/portfolio.svg?ydqqj6#portfolio') format('svg');
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?eagii6');
+  src:  url('fonts/icons.eot?eagii6#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?eagii6') format('truetype'),
+    url('fonts/icons.woff?eagii6') format('woff'),
+    url('fonts/icons.svg?eagii6#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'portfolio' !important;
+  font-family: 'icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,8 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-profile:before {
-  content: "\e923";
+.icon-close:before {
+  content: "\e900";
+}
+.icon-menu:before {
+  content: "\e901";
+}
+.icon-view-show:before {
+  content: "\e902";
 }
 .icon-file-text:before {
   content: "\e926";
@@ -36,9 +42,6 @@
 }
 .icon-envelop:before {
   content: "\e945";
-}
-.icon-eye:before {
-  content: "\e9ce";
 }
 .icon-circle-down:before {
   content: "\ea43";

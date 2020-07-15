@@ -23,3 +23,22 @@ const getScrollOptionsFrom = ({ offsetTop, offsetLeft }) => ({
 });
 
 window.addEventListener("load", goToSectionInHash);
+
+const toggleNavigationElement = document.querySelector(".toggle-navigation");
+
+const toggleOpen = event => {
+  event.preventDefault();
+  const { target } = event;
+  const parentButtonElement = target.closest("a");
+  const siblingElement = parentButtonElement.nextElementSibling;
+  siblingElement.classList.toggle("open");
+};
+
+const toggleNavigationBackground = event => {
+  const { target } = event;
+  const parentNavigation = target.closest("nav");
+  parentNavigation.classList.toggle("main-navigation-opened");
+};
+
+toggleNavigationElement.addEventListener("click", toggleOpen);
+toggleNavigationElement.addEventListener("click", toggleNavigationBackground);
